@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/assets/css/style.css">
+    <title>| BLOGPOST SIGNIN |</title>
+</head>
+<body style="background: rgb(74, 69, 69)">
+    <div class="container">
+        <div class="wrapper">
+          <div class="title"><span>Signup Form</span></div>
+          <form action="/signed" method="post">
+            <div class="row">
+              <i class="usr"></i>
+              <input type="text" placeholder="Name" name="Name" required>
+            </div>
+            <div class="row">
+              <i class="user"></i>
+              <input type="email" placeholder="Email" name="Email" required>
+            </div>
+            <div class="row">
+              <i class="lock"></i>
+              <input type="password" placeholder="Password" name="Password" required>
+            </div>
+            <div class="row button">
+              <input type="submit" value="Sign in">
+            </div>
+            <div class="link"> Already a member? <a href="/login">Login now</a></div>
+          </form>
+        </div>
+      </div>
+</body>

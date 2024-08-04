@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| BLOG |</title>
+</head>
+<link rel="stylesheet" href="static/assets/css/style.css">
+
+<body style="background: lightslategray">
+        <div class="container" style="margin-left: 400px;">
+            <div class="wrapper" style="background-color: whitesmoke;height: 650px;width: 650px;">
+
+              <div class="title" style="background-color:lightslategray;color: whitesmoke;width: 630px"><span><h4>YOUR BLOG</h4></span></div>
+              <form  action="/blogp" method="post" >
+                <p id="datetime"></p>
+
+                <script>
+                 // Get current date and time
+                 var date = new Date();
+                 var datetime = date.toLocaleString();
+
+                 // Insert date and time into HTML
+                var d=document.getElementById("datetime").innerHTML = datetime;
+        
+                  
+                  
+                </script>
+                <!-- date store? insert into table i.e new table with 3 columns  -->
+              
+                <div class="area">
+                    <i class="ttle"></i>
+                    <textarea  type="text" id="head" placeholder="Title " name="head" rows="5" style="height: 100px;width: 550px;" ></textarea>
+                </div>
+                <div>
+                    <textarea  type="text " id = "Description" style="width:550px;height: 200px;margin-left: 20px;" maxlength="500" placeholder="Description" name="Description" ></textarea>
+      
+                </div>
+                <input type="submit" value="NEXT "  style="border:1px solid whitesmoke;background-color: whitesmoke;padding-left:200px;
+                margin-top: 40px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-decoration:none;
+                color:whitesmoke;font-size: 25px;border:1px solid lightslategray;background-color: lightslategray;" >
+                <button  style="border:1px solid whitesmoke;background-color: whitesmoke;padding-left: 50px;"><a  class="ahov "href="/home" 
+                    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-decoration: none;
+                    color: whitesmoke;font-size: 25px;border:1px solid lightslategray;background-color: lightslategray;">CANCEL</a></button>
+                <!--div class="link"> Already a member? <a href="/login">Login now</a></div-->
+              </form>
+            </div>
+          </div>
+    </body>
+
+</body>
